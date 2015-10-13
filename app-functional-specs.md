@@ -17,7 +17,11 @@ Our relay service acts as temporary storage until the recipient requests a docum
 
 Client applications include additional back-channel methods of authenticating users via two-factor authentication using time based one-time passwords, biometrics and/or private channel devices.  This additional authentication solves the stolen device risk.
 
+## Authentication
 
+### Whitelisted User Base
+
+All users connected to the system must go through a white-listing process.  This includes identifying persons, machines, and the hosting environments that they belong to.  A user's connection is always based on a validated list, otherwise the connection is rejected.
 
 
 ![Client Application / Relay Service Diagram](./client-relay.png)
