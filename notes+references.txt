@@ -1,0 +1,1 @@
+http://web.cs.ucdavis.edu/~rogaway/papers/modes.pdf
