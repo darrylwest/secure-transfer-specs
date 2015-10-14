@@ -9,11 +9,11 @@ The risk areas for secure document exchange include...
 * authentication breech caused by careless users, weak passwords, etc
 * authentication breech caused by stolen device
 
-Our solution addresses these risks by creating a secure client-to-client environment where only the recipient has the ability to decrypt the received document.   Each user would have their own copy of the natively compiled client application, with secure key generation.
+Our solution addresses these risks by creating a secure client-to-client environment where only the recipient has the ability to decrypt the received document.   Each user would have their own copy of the natively compiled client application, capable of secure key generation for both asymmetric and symmetric encrytion.
 
-Combining hmac document signatures with secure sockets solves the man-in-the-middle risk.  Using machine keys with hight entropy to encrypt sensitive documents solves the careless user/weak password risk.
+Combining hmac document signatures with secure sockets solves the man-in-the-middle risk.  Using machine keys with high entropy to encrypt sensitive documents solves the careless user/weak password risk.
 
-Our relay service acts as temporary storage until the recipient requests a document published specifically for them.  This solves the data-at-rest risk.
+Our relay service acts as temporary storage until the recipient requests a document published specifically for them.  This, combined with secure servers, solves the data-at-rest risk.
 
 Client applications include additional back-channel methods of authenticating users via two-factor authentication using time based one-time passwords, biometrics and/or private channel devices.  This additional authentication solves the stolen device risk.
 
@@ -32,7 +32,7 @@ All users connected to the system must go through a white-listing process.  This
 
 The client application has the ability to send out it's public key to the relay server and recieve encrypted data based on the public key.  Encrypted data usually includes a symmetric key to be used by other cooperating clients.
 
-Client applications are written in nw.js (NodeWebkit) with low-level exchanges done in go.  Target environments include Windows, MacOSX and Linux.  Phase 2 versions support iOS/iPad/iPhone.
+Client applications are written in nw.js (NodeWebkit) with low-level exchanges and encryption implemented in go (lang).  Target environments include Windows, MacOSX and Linux.  Back-channek implementations would support iOS/iPad/iPhone and Android devices.
 
 * client applications compiled for Windows, Mac and Linux
 * client application can act as a document producer or consumer
@@ -44,7 +44,7 @@ Client applications are written in nw.js (NodeWebkit) with low-level exchanges d
 
 ### Relay Service
 
-The relay service operates over secure websockets, only handles encrypted anonymous data transfers, and never persists data.  For memory and disk safe operation, the relay service is hosted on a private, secure server.
+The relay service operates over secure websockets, only handles encrypted anonymous and sequencial data transfers, and never persists data.  For memory and disk safe operation, the relay service is hosted on a private, secure server.  Data transfers are completely auditable to determine when documents are published and who has recieved documents.
 
 The main features/functions are...
 
@@ -64,4 +64,4 @@ This solution leverages the relatively small user set (10K) to create an exchang
 The relay system anonymously takes bits of encrypted data and holds it for transfer to the specified recipient who has the only capability to decrypt the data.
 - - -
 darryl.west@roundpeg.com
-version 0.90.12 12-Oct-2015
+version 0.90.12 13-Oct-2015
