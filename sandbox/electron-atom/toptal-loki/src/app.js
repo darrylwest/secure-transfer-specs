@@ -29,12 +29,12 @@ function createInsertWindow() {
 
 app.on('ready', function() {
     mainWindow = new BrowserWindow({
-        width: 1024,
+        width: 800,
         height: 768
     });
 
     mainWindow.loadUrl('file://' + __dirname + '/windows/main/main.html');
-    mainWindow.openDevTools();
+    // mainWindow.openDevTools();
 
     ipc.on('toggle-insert-view', function() {
         if(!insertWindow) {

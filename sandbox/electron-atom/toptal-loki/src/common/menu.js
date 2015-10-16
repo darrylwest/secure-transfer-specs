@@ -17,6 +17,11 @@ var template = [
                 }
             },
             {
+                label: 'Services',
+                role:'services',
+                submenu:[]
+            },
+            {
                 type: 'separator'
             },
             {
