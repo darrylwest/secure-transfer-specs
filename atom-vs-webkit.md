@@ -36,6 +36,8 @@ DOM Security|no|[yes](https://github.com/nwjs/nw.js/wiki/Security)
 Advanced File Dialog|?|[yes](https://github.com/nwjs/nw.js/wiki/File-dialogs)
 Supports Windows Vista|no|yes
 NaCI Support|no|yes (alpha)
+CLI/grunt Build tools|?|[yes](https://github.com/nwjs/nw-builder)
+
 
 
 ## Tutorials
