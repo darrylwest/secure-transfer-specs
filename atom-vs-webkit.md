@@ -32,7 +32,7 @@ Links...
 <tr><td>Supports compiled javascript</td><td>no</td><td><a href='https://github.com/nwjs/nw.js/wiki/Protect-JavaScript-source-code-with-v8-snapshot'>yes</a></td></tr>
 <tr><td>Jailed dev-tools</td><td>no</td><td><a href='https://github.com/nwjs/nw.js/wiki/Security'>yes</a></td></tr>
 <tr><td>DOM Security</td><td>no</td><td><a href='https://github.com/nwjs/nw.js/wiki/Security'>yes</a></td></tr>
-<tr><td>Advanced File Dialog</td><td>></td><td><a href='https://github.com/nwjs/nw.js/wiki/File-dialogs'>yes</a></td></tr>
+<tr><td>Advanced File Dialog</td><td>?</td><td><a href='https://github.com/nwjs/nw.js/wiki/File-dialogs'>yes</a></td></tr>
 <tr><td>Supports Windows Vista</td><td>no</td><td>yes</td></tr>
 <tr><td>NaCI Support</td><td>no</td><td>yes (alpha)</td></tr>
 </table>
@@ -41,6 +41,14 @@ Links...
 
 ## Tutorials
 
+### Node Webkit 
+
+* [Strong Loop - build a simple app](https://strongloop.com/strongblog/creating-desktop-applications-with-node-webkit/)
+
+### Atom / Electron
+
+* [Electron Quick Start](http://electron.atom.io/docs/v0.33.0/tutorial/quick-start/)
+* [Toptal App](http://www.toptal.com/javascript/electron-cross-platform-desktop-apps-easy)
 
 ## References
 
