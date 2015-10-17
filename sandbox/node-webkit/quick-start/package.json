@@ -1,5 +1,16 @@
 {
-    "name":"quick-start",
+    "name":"Quick Start",
     "version":"0.0.1",
-    "main":"index.html"
+    "main":"app://secure/index.html",
+    "window": {
+        "toolbar":false,
+        "frame":true,
+        "width":500,
+        "height":600,
+        "position":"mouse",
+        "min_width":200,
+        "min_height":200
+    },
+    "fullscreen":true,
+    "user-agent":"RainCitySoftware"
 }
