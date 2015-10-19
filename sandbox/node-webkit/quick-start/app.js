@@ -6,5 +6,3 @@ mb.createMacBuiltin("Quick Demo", { hideEdit:true, hideWindow: true } );
 var win = gui.Window.get();
 win.menu = mb;
 
-win.showDevTools('', true);
-
