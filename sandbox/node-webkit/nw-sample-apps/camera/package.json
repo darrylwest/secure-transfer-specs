@@ -1,5 +1,5 @@
 {
-  "name": "nw-demo",
+  "name": "camera access demo",
   "main": "app.html",
   "window": {
     "show": false,
