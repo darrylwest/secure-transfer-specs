@@ -3,3 +3,6 @@ http://web.cs.ucdavis.edu/~rogaway/papers/modes.pdf
 https://github.com/kisom/gocrypto.git # code and online book by Kyle Isom
 
 http://electron.atom.io/docs/v0.33.0/tutorial/desktop-environment-integration/ # atom/electron tutorial
+
+http://viewerjs.org/
+
